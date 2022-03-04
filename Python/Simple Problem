@@ -1,0 +1,9 @@
+#Simple problem
+a=int(input("Enter an integer: "))
+while True:
+    a=int(input("Enter an integer: "))
+    print("digit1: {}".format(a//10))
+    print("digit2: {}".format(a%10))
+    if 10<=a<=99:
+        break
+
