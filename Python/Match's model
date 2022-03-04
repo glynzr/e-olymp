@@ -1,0 +1,4 @@
+#Match's model
+N=int(input("enter the quantity of bricks:  "))
+matches=8*N+4
+print("For {} bricks we need {} matches.".format(N,matches))
