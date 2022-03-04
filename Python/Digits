@@ -1,0 +1,7 @@
+#Digits:
+a=int(input("Enter an integer: "))
+digit=0
+while a>0:
+    a//=10
+    digit+=1
+print(digit)
