@@ -1,0 +1,15 @@
+#Two circles:
+import math
+x1,y1=map(float,input("Enter the cootdinates of the 1st circle: ").split(","))
+x2,y2=map(float,input("Enter the cootdinates of the 2nd circle: ").split(","))
+r1=float(input("Radius of the 1st circle: "))
+r2=float(input("Radius of the 2nd circle: "))
+d=math.sqrt((x1-x2)**2+(y1-y2)**2)
+if d==0 or d<abs(r1-r2):
+    print("These circles have no common points")
+elif d==abs(r1-r2) or d==r1+r2:
+    print("These circles have 1 common point")
+elif abs(r1-r2)<d<r1+r2:
+    print("These circles have 2 common points")
+else:
+    print(-1)
