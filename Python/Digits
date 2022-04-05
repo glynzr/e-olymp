@@ -5,3 +5,7 @@ while a>0:
     a//=10
     digit+=1
 print(digit)
+
+
+#
+print(len(input()))
