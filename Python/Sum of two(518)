@@ -1,0 +1,5 @@
+#sum of two
+n=int(input())
+while n>0:
+    print(input()+input())
+    n-=1
