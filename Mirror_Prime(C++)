@@ -1,0 +1,40 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int isPrime(int n){
+    if (n==1){
+        return false;
+    }else if (n==2){
+        return true;
+    }else{
+        for (int i=2;i<n;i++){
+            if(n%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+int convert(int n){
+    string a=to_string(n),s="";
+    for (int i=a.length()-1;i>-1;i-=1){
+        s+=a[i];
+    }
+    int b=stoi(s);
+    return b;
+
+}
+
+int main(){
+    int a,b,c=0;
+    cin>>a>>b;
+    for (int i=a;i<=b;i++){
+        if (isPrime(i) and isPrime(convert(i))){
+            c+=1;
+
+        }
+    }
+    cout<<c<<endl;
+    return 0;
+}
